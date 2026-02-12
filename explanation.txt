@@ -1,0 +1,44 @@
+Disclaimer! The "ABI_AUDIOSWITCH.exe" is just a compiled .ahk(See the .ahk File in the folder) File Ment to check if ABI(through "Window-title detection" , will not interfere with anticheat) is running or not, 
+and will change the config.txt trajectory from:  ↓ →
+
+config.txt↓
+	Include: ACTIVE.txt↓
+			ACTIVE.txt↓
+				Include: HEADPHONES_EQ.txt	to:
+			
+						
+config.txt↓
+	Include: ACTIVE.txt↓
+			ACTIVE.txt↓
+				Include: ABI.txt
+
+
+The ABI.txt already contains a preset EQ from(YT: Stereo Bites) to adjust the frequensies of loud noises and boost the quieter one, like footsteps.
+Since the EQ sound pretty bad outside the Game I coded this Autoswitch. Note, most but not all has been made possible by GPT and People who definitely are better at EQ then me, 
+since it's more like a student project to me, I invite you happily to review my code and give feedback.
+
+If the .exe is deleted or not running the EQ's will still continue to work, they just have to be manually selected. 
+
+
+If the game is uninstalled nothing will break, the software will just continue to run HEADPHONES_EQ.txt and will basically do nothing.
+Processing Power should also be not affected for as little code it is, it is propably less than 0.1%
+
+If you want to finetune your ABI.txt EQ you should regard the following, before you adjust everything to your liking:
+
+Preamp: changes the loudness of the overall sound. So -6dB lowers overall sound. But linked with the "VSTPlugin: LoudMax64.dll" Compression it also boosts the quiet sounds:
+
+Loud sounds
+→ limited at the ceiling(Ppreamp)
+Quiet sounds
+→ raised by automatic makeup gain(VST)
+
+Filter: ON/OFF makes just the Line active or inactive wihtout having to delete it.
+
+Filter	What it does
+PK	Adjusts a specific frequency range
+LS	Adjusts everything below a frequency
+HS	Adjusts everything above a frequency
+
+Fc = frequency the value next to it in "Hz" is normally the x=axis on a graph while dB is y=axis and describes how loud something is. So "Fc 100 Hz" is really low and "Fc 13000 Hz" is really High pitch.
+
+Q: Describes how wide or narrow your filter applies on the freaquency spectrum. The lower the value set the wider it reaches. For example: "Filter: ON PK Fc 100 Hz Gain -6 dB Q 0.3" would affect the sound around 100 Hz the most slowly fading out at aound 20-50 Hz below and 250-300 Hz above. Higher Q = steeper, tighter transition around the cutoff frequency lke: "Filter: ON PK Fc 100 Hz Gain -6 dB Q 5" affect only ranging from 90 Hz -110 HZ

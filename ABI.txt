@@ -1,0 +1,13 @@
+Preamp: -6 dB
+
+# Low shelf – bass suppression
+Filter: ON LS Fc 100 Hz Gain -12 dB Q 0.7
+
+# Low-mid cleanup
+Filter: ON PK Fc 315 Hz Gain -6 dB Q 3
+
+# Presence control
+Filter: ON PK Fc 6300 Hz Gain -6 dB Q 3
+
+# --- Compression ---
+VSTPlugin: LoudMax64.dll
