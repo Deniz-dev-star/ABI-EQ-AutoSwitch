@@ -1,4 +1,7 @@
    	QUICK INSTALLATION GUIDE
+    
+    Download latest release:
+https://github.com/KaxyCode/ABI-EQ-AutoSwitch/releases/latest
 
 !!FOLLOW STEP BY STEP!!
 
@@ -69,3 +72,4 @@ Filter 7: ON PK Fc 7200 Hz Gain 5.0 dB Q 0.500
 Filter 8: ON PK Fc 8600 Hz Gain -3.6 dB Q 1.100
 Filter 9: ON PK Fc 10000 Hz Gain 7.7 dB Q 1.900
 Filter 10: ON PK Fc 13000 Hz Gain -6.6 dB Q 2.000
+
