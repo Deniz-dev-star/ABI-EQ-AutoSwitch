@@ -26,7 +26,7 @@ example: (C:\Program Files\EqualizerAPO\)
 
 10. Make sure the Box next to "Include" reads "ACTIVE.txt" if not click the folder icon left of the green arrow and click "ACTIVE.txt"
 
-11. Move "ABI_AUDIOSWITCH.exe" into: "Win + R" → shell:startup Folder  
+11. Move "ABI_AUDIOSWITCH.exe" into: "Win + R" → "shell:startup" Folder  
 Right-click "ABI_AUDIOSWITCH.exe" → Properties → Compatibility → enable "Run this program as an administrator" right click the .exe again → "Run as administrator"
 
 12. In the Config Folder is an "AHK_LOG.txt" meant as a Status Log/debugging tool. It will show you if it detects the Game opened/closed and if it changes the Preset EQ. (note! do not change Filenames or anything else unless expressed or you know what you are doing. If the it's not working, try restart PC or run .exe as administrator again. Otherwise go through the checklist again.)
@@ -72,4 +72,5 @@ Filter 7: ON PK Fc 7200 Hz Gain 5.0 dB Q 0.500
 Filter 8: ON PK Fc 8600 Hz Gain -3.6 dB Q 1.100
 Filter 9: ON PK Fc 10000 Hz Gain 7.7 dB Q 1.900
 Filter 10: ON PK Fc 13000 Hz Gain -6.6 dB Q 2.000
+
 
